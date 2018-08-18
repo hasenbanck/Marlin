@@ -84,6 +84,17 @@
 #define END_FLASH_ADDR    0x08100000
 #endif
 
+#if defined(STM32F7xx)
+// For STM32F765VI in RemRam v1
+//  SRAM  (0x20000000 - 0x20080000) (512kb)
+//  FLASH (0x08000000 - 0x08200000) (2048kb)
+//
+#define START_SRAM_ADDR   0x20000000
+#define END_SRAM_ADDR     0x20080000
+#define START_FLASH_ADDR  0x08000000
+#define END_FLASH_ADDR    0x08200000
+#endif
+
 #ifdef __MK64FX512__
 // For MK64FX512 in TEENSY 3.5
 //  SRAM  (0x1FFF0000 - 0x20020000) (192kb)

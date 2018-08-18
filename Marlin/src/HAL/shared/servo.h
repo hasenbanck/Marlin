@@ -76,6 +76,8 @@
   #include "../HAL_LPC1768/LPC1768_Servo.h"
 #elif defined(STM32F4) || defined(STM32F4xx)
   #include "../HAL_STM32F4/HAL_Servo_STM32F4.h"
+#elif defined(STM32F7xx)
+  #include "../HAL_STM32F7xx/HAL_Servo_STM32F7.h"
 #else
   #include <stdint.h>
 
